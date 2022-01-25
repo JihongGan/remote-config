@@ -6,6 +6,8 @@
 #
 # Jihong Gan <jhgan99@gmail.com>
 
+### For Ubuntu ###
+
 # Stop on errors, print commands
 # See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
 #set -Eeuo pipefail
@@ -20,6 +22,11 @@ sudo apt-get install manpages-dev
 sudo ln -s /usr/bin/python3 /usr/bin/python
 # set us east timezone
 sudo timedatectl set-timezone America/New_York
+
+# GitHub CLI
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt install gh
 
 # vim setup
 # TODO: no need to manually install vim unless it's ubuntu16.04
