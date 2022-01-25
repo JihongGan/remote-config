@@ -18,6 +18,8 @@ sudo apt upgrade
 sudo apt install build-essential libncurses-dev
 sudo apt-get install manpages-dev
 sudo ln -s /usr/bin/python3 /usr/bin/python
+# set us east timezone
+sudo timedatectl set-timezone America/New_York
 
 # vim setup
 # TODO: no need to manually install vim unless it's ubuntu16.04
