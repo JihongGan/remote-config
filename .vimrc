@@ -134,7 +134,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
 
-Plug 'ycm-core/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
 
 Plug 'preservim/vimux'
 
