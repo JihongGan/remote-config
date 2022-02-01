@@ -31,13 +31,14 @@ gh auth login
 
 # vim setup
 # TODO: no need to manually install vim unless it's ubuntu16.04
-sudo apt remove vim
-git clone https://github.com/vim/vim.git
-cd vim/src
-make
-sudo make install
-cd ~
-sudo rm -rf vim
+# sudo apt remove vim
+# git clone https://github.com/vim/vim.git
+# cd vim/src
+# make
+# sudo make install
+# cd ~
+# sudo rm -rf vim
+
 cp ~/remote-config/.vimrc ~
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
