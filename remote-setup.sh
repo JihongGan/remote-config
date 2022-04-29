@@ -28,6 +28,8 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt install gh
 gh auth login
+git config --global user.name "Jihong Gan"
+git config --global user.email "jhgan99@gmail.com"
 
 # vim setup
 # TODO: no need to manually install vim unless it's ubuntu16.04
